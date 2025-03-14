@@ -22,4 +22,9 @@ public class Cart {
 
     public int getCustomerId() { return customerId; }
     public List<Integer> getBookIds() { return bookIds; }
+    
+     public void addBook(int bookId) { bookIds.add(bookId); }
+    public void removeBook(int bookId) { bookIds.remove(Integer.valueOf(bookId)); }
+    public void clearCart() { bookIds.clear(); }
 }
+
