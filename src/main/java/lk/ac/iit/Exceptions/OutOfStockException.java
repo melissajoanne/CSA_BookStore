@@ -8,6 +8,8 @@ package lk.ac.iit.Exceptions;
  *
  * @author melzjoanne
  */
-public class OutOfStockException {
-    
+public class OutOfStockException extends RuntimeException {
+    public OutOfStockException(String message) {
+        super(message);
+    }
 }

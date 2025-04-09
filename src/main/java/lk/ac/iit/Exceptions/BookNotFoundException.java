@@ -8,6 +8,10 @@ package lk.ac.iit.Exceptions;
  *
  * @author melzjoanne
  */
-public class BookNotFoundException {
-    
+public class BookNotFoundException extends RuntimeException {
+    public BookNotFoundException(String message) {
+        super(message);
+    }
 }
+    
+

@@ -8,6 +8,10 @@ package lk.ac.iit.Exceptions;
  *
  * @author melzjoanne
  */
-public class CustomerNotFoundException {
-    
+public class CustomerNotFoundException extends RuntimeException {
+    public CustomerNotFoundException(String message) {
+        super(message);
+    }
 }
+
+

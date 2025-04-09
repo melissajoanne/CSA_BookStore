@@ -8,6 +8,8 @@ package lk.ac.iit.Exceptions;
  *
  * @author melzjoanne
  */
-public class CartNotFoundException {
-    
+public class CartNotFoundException extends RuntimeException {
+    public CartNotFoundException(String message) {
+        super(message);
+    }
 }
