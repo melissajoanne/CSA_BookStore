@@ -36,4 +36,30 @@ public class Book {
     public int getStock() { return stock; }
     
     public void setStock(int stock) { this.stock = stock; }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setAuthorId(int authorId) {
+        this.authorId = authorId;
+    }
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+
+    public void setPublicationYear(int publicationYear) {
+        this.publicationYear = publicationYear;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+    
+   
 }

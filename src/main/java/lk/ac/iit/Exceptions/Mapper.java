@@ -4,19 +4,18 @@
  */
 package lk.ac.iit.Exceptions;
 
-/**
- *
- * @author melzjoanne
- */
-
 import java.util.HashMap;
 import java.util.Map;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.ext.ExceptionMapper;
 import javax.ws.rs.ext.Provider;
 
+/**
+ *
+ * @author melzjoanne
+ */
 @Provider
-public class mapper implements ExceptionMapper<RuntimeException> {
+public class Mapper implements ExceptionMapper<RuntimeException> {
     @Override
     public Response toResponse(RuntimeException ex) {
         Map<String, String> error = new HashMap<>();
